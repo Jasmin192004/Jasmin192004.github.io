@@ -1,111 +1,95 @@
 body {
-    font-family: Helvetica, Arial, sans-serif;
+    font-family: 'poppins', Arial, sans-serif, Impact,'Arial Narrow Bold';
+    font-size: 1vw;
     margin: 0px;
-    font-size: 1.5vw;
+    padding: 0px;
+    background-color: azure;
 }
-
-#logo {
+#title {
+    font-weight: 700;
+    letter-spacing: 1px;
     margin: 0px;
-    padding: 8px;
-    /* if the font has two words you have to use double quotations */
-    font-family: "Fredoka One", sans-serif;
-    width: 16%;
+    padding: 5px;
+    font-family: Helvetica, sans-serif, Arial, Impact,'Arial Narrow Bold';
+    width: 25%;
 }
-/* to represent colours apart from there name 
-you could use the rgb values e.g., rgb(255, 255, 255)  which 
-equals to white while rgb(0,0,0) equals to black
-we can also represent the colours using hexadecimals e.g. #ff e.g. #99ffaa = pastel green*/
-
-/* lol colours for color palet */
-/* you can give two values e.g. margin: 0px 100 px 
-the first value applies to top and bottom and 
-2nd value applies to left and right or you can give
-4 values e.g. 10px 30px 60px 150px so it goes around the clock
-top, right, bottom and left.*/
 
 ul {
     margin: 0px;
 }
-/* just header is a default selector so it 
-will select all the headers in the webpage 
-and apply css to them */ 
-body > header { 
-    background-color: orange;
-    color: white;
-    /* changing text colour is simply color: your chosen
-    colour followed by; */
+
+body > header {
+    background-color: #EC7357 ;
+    color: antiquewhite;
+    height: 10vh;
     display: flex;
-    height: 15vh;
     align-items: center;
     justify-content: space-around;
-    /* csstricks website for flex box tricks */
-}
-
-#nav-ul {
-    display: flex;
-}
-
-#nav-ul > li {
-    padding: 8px;
-    margin: 16px;
-}
-body > header > nav > ul {
-    list-style: none;
-    text-decoration: none;
-}
-
-/* body > header > nav > ul > a  is to target the anchor 
-button and change its styling since its two large we can use
-a class as below*/
-.navbutton {
-    color: white;
-    text-decoration: none;
-    padding: 12px;
-    border: 1px solid white;
-    border-radius: 10%;
 }
 
 body > footer {
-    background-color: orange;
-    display: flex;
+    background-color: #754f44;
+}
+
+.navbutton {
+    color: whitesmoke;
+    border: 1.5px solid white;
+    border-radius: 20%;
+    padding: 8px;
+    text-decoration: none;
 }
 
 form {
     text-align: center;
 }
 
-h2 {
+h3 {
     text-align: center;
 }
 
-/* to add margins and centralise the text on the page */
-body > main article {
-    width: 60%;
-    margin: auto;
+h4 {
+    text-align: center;
 }
 
-#main-content {
+footer > section > nav > ul {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+}
+footer > section > nav > ul > div > li > a {
+    color: #fdd692;
+    text-decoration: none;
+}
+
+footer > section > nav > footer {
+    text-align: right;
+}
+
+#menu {
     display: flex;
     justify-content: space-around;
 }
 
-#main-content > div {
-    width: 70%
-}
-img {
-    border-radius: 50%;
+#menu > div {
+    width: 60%;
 }
 
-#footer-ul {
+.INGREDIENTS-container{
     display: flex;
-    list-style: none;
+    gap: 10px;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.INGREDIENTS-image {
+    max-width: 300px;
+    border-radius: 10px;
 }
 
-#footer-ul > div > li {
-    margin-left: 12px;
+.INGREDIENTS-container > ul {
+    margin-left: 10px;
+    font-size: 20px;
 }
 
-#footer-ul > div > li > a {
-    color: white;
-    text-decoration: none;
+h2 {
+    align-items: center;
 }
