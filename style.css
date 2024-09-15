@@ -1,0 +1,111 @@
+body {
+    font-family: Helvetica, Arial, sans-serif;
+    margin: 0px;
+    font-size: 1.5vw;
+}
+
+#logo {
+    margin: 0px;
+    padding: 8px;
+    /* if the font has two words you have to use double quotations */
+    font-family: "Fredoka One", sans-serif;
+    width: 16%;
+}
+/* to represent colours apart from there name 
+you could use the rgb values e.g., rgb(255, 255, 255)  which 
+equals to white while rgb(0,0,0) equals to black
+we can also represent the colours using hexadecimals e.g. #ff e.g. #99ffaa = pastel green*/
+
+/* lol colours for color palet */
+/* you can give two values e.g. margin: 0px 100 px 
+the first value applies to top and bottom and 
+2nd value applies to left and right or you can give
+4 values e.g. 10px 30px 60px 150px so it goes around the clock
+top, right, bottom and left.*/
+
+ul {
+    margin: 0px;
+}
+/* just header is a default selector so it 
+will select all the headers in the webpage 
+and apply css to them */ 
+body > header { 
+    background-color: orange;
+    color: white;
+    /* changing text colour is simply color: your chosen
+    colour followed by; */
+    display: flex;
+    height: 15vh;
+    align-items: center;
+    justify-content: space-around;
+    /* csstricks website for flex box tricks */
+}
+
+#nav-ul {
+    display: flex;
+}
+
+#nav-ul > li {
+    padding: 8px;
+    margin: 16px;
+}
+body > header > nav > ul {
+    list-style: none;
+    text-decoration: none;
+}
+
+/* body > header > nav > ul > a  is to target the anchor 
+button and change its styling since its two large we can use
+a class as below*/
+.navbutton {
+    color: white;
+    text-decoration: none;
+    padding: 12px;
+    border: 1px solid white;
+    border-radius: 10%;
+}
+
+body > footer {
+    background-color: orange;
+    display: flex;
+}
+
+form {
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+}
+
+/* to add margins and centralise the text on the page */
+body > main article {
+    width: 60%;
+    margin: auto;
+}
+
+#main-content {
+    display: flex;
+    justify-content: space-around;
+}
+
+#main-content > div {
+    width: 70%
+}
+img {
+    border-radius: 50%;
+}
+
+#footer-ul {
+    display: flex;
+    list-style: none;
+}
+
+#footer-ul > div > li {
+    margin-left: 12px;
+}
+
+#footer-ul > div > li > a {
+    color: white;
+    text-decoration: none;
+}
